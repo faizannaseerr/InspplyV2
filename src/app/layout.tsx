@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import NavBar from '@/components/NavBar'
+import { ClerkProvider } from '@clerk/nextjs'
 
 export const metadata: Metadata = {
   title: 'Inspply - Automated Job Applications',
@@ -13,13 +14,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-gray-50'>
-      <body>
-        <div>
-          <NavBar />
-          {children}
-        </div>
-      </body>
-    </html >
+    <ClerkProvider>
+      <html lang="en" className='bg-gray-50'>
+        <body>
+          <div>
+            <NavBar />
+            {children}
+          </div>
+        </body>
+      </html >
+    </ClerkProvider>
   )
 }

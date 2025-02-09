@@ -58,7 +58,7 @@ export default function ResumeUpload() {
           ${isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300 hover:border-gray-400'}`}
             >
                 <input {...getInputProps()} />
-                <div className="space-y-4">
+                <div className="space-y-2">
                     <div className="text-4xl mb-4">📄</div>
                     <>
                         <p className="text-lg text-gray-600 font-newsone">

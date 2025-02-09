@@ -12,7 +12,7 @@ export default function Home() {
           </h1>
           <div className="text-lg font-newsone my-4 py-2 w-fit mx-auto">
             Upload your resume and let <p className="font-bold inline">AI</p> provide you with a {" "}
-            <p className="font-bold inline">focused application portfolio.</p>
+            <p className="font-bold inline bg-gradient-to-r bg-clip-text from-blue-800 to-gray-900 text-transparent">focused application portfolio.</p>
           </div>
         </div>
         <ResumeUpload />
